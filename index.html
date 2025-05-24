@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>高業證照學習平台</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: #f0fdf4;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #22c55e;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      padding: 14px 32px;
+      font-size: 1rem;
+      background-color: #22c55e;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #16a34a;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+    }
+
+    .feature-box {
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #16a34a;
+    }
+
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .learning-flow {
+      padding: 60px 20px;
+      background: #ecfdf5;
+    }
+
+    .learning-flow h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #16a34a;
+    }
+
+    .learning-boxes {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .learning-box {
+      width: 300px;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .learning-box h3 {
+      font-size: 1.2rem;
+      color: #22c55e;
+      margin-bottom: 10px;
+    }
+
+    .learning-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .features, .learning-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-placeholder.png" alt="平台 Logo" />
+    <h1>高業證照衝刺平台</h1>
+    <p>AI 協助學習、進度追蹤、錯題整理，一站式快速通過高業考試！</p>
+    <a class="cta-button" href="https://liff.line.me/你的LIFF-ID" target="_blank">👉 立即加入 LINE 群組</a>
+  </header>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>🔥 命中率超高題庫</h3>
+      <p>分析歷年考題，聚焦常考高頻題。</p>
+    </div>
+    <div class="feature-box">
+      <h3>🤖 AI 解題輔助</h3>
+      <p>自動生成解析，幫你理解觀念與出題邏輯。</p>
+    </div>
+    <div class="feature-box">
+      <h3>📈 進度與錯題追蹤</h3>
+      <p>即時統計學習狀況與易錯題型。</p>
+    </div>
+  </section>
+
+  <section class="learning-flow">
+    <h2>用三步驟，攻克高業考試！</h2>
+    <div class="learning-boxes">
+      <div class="learning-box">
+        <h3>1️⃣ 模擬測驗</h3>
+        <p>體驗一次模擬考，馬上知道弱點在哪。</p>
+      </div>
+      <div class="learning-box">
+        <h3>2️⃣ 關卡式補強</h3>
+        <p>依據錯題推薦模組，逐關突破觀念。</p>
+      </div>
+      <div class="learning-box">
+        <h3>3️⃣ 考古題衝刺</h3>
+        <p>完成後再刷歷屆題，強化實戰應用力。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 高業平台 EduPilot. All rights reserved.
+  </footer>
+
+</body>
+</html>
